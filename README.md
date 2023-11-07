@@ -16,6 +16,7 @@
 - 文字格式化和排版
 - 鏈接和圖片嵌入
 - 表格和程式碼塊
+- [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 - 實際操作：編寫一份技術文檔或學術報告，包括標題、段落、列表、引用、鏈接和圖片等元素。
   
