@@ -144,6 +144,11 @@ H<sub>2</sub>O, CO<sub>2</sub>
 *3X<sup>2</sup> + 2X + 3 = 10*
 
 ### Markdown+Math
+$a * b = c ^ b$
+
+$2^{\frac{n-1}{3}}$
+
+$\int\_a^b f(x)\,dx.$
 
 $x^2+2x+3$ 
 
@@ -158,3 +163,16 @@ $f(x)=\frac{1}{{\sigma\sqrt{2\pi}}}e^{-\frac{(x-\mu)^{2}}{2\sigma^{2}}}$
 $X \sim \mathcal{N}(\mu,\sigma^2)$
 
 $f(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp{[-\frac{(x-\mu)^{2}}{2\sigma^{2}}]}$
+
+
+### Table
+
+|              Stage | Direct Products | ATP Yields |
+| -----------------: | --------------: | ---------: |
+|         Glycolysis |          2 ATP              ||
+| ^^                 |          2 NADH |   3--5 ATP |
+| Pyruvaye oxidation |          2 NADH |      5 ATP |
+|  Citric acid cycle |          2 ATP              ||
+| ^^                 |          6 NADH |     15 ATP |
+| ^^                 |          2 FADH |      3 ATP |
+|                               30--32 ATP        |||
