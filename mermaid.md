@@ -3,13 +3,23 @@
 - [Mermaid: Generate diagrams from markdown-like text.](https://github.com/mermaid-js/mermaid/blob/develop/README.md)
 - [Mermaidv10.5.0 Live Editor](https://mermaid.live/)
 - [A Mermaid User-Guide for Beginners](https://mermaid.js.org/intro/getting-started.html)
+- [How to Create Diagrams as Code with Mermaid, GitHub, and Visual Studio Code (SEPTEMBER 6, 2023)](https://www.freecodecamp.org/news/diagrams-as-code-with-mermaid-github-and-vs-code/)
 
 ```mermaid
 graph LR
    A --> B
    A -->C
    C -->D
-``` 
+```
+
+```mermaid
+graph LR;
+    A--> B & C & D;
+    B--> A & E;
+    C--> A & E;
+    D--> A & E;
+    E--> B & C & D;
+```
 
 ```mermaid
 pie title Pets adopted by volunteers
@@ -46,4 +56,54 @@ F -->|" "| N[6*6=36]
 G -->|" "| O[7*7=49]
 H -->|" "| P[8*8=64]
 I -->|" "| Q[9*9=81]
+```
+
+```mermaid
+classDiagram
+    class Animal {
+        +name: string
+        +age: int
+        +makeSound(): void
+    }
+
+    class Dog {
+        +breed: string
+        +bark(): void
+    }
+
+    class Cat {
+        +color: string
+        +meow(): void
+    }
+
+    Animal <|-- Dog
+    Animal <|-- Cat
+```
+
+```mermaid
+gantt
+    title Project Schedule
+    dateFormat YYYY-MM-DD
+    axisFormat %m/%d
+
+    section Planning
+    Define Project : 2023-01-01, 7d
+    Research : 2023-01-08, 14d
+    Define Requirements : 2023-01-22, 7d
+
+    section Development
+    Design : 2023-01-29, 21d
+    Implementation : 2023-02-19, 28d
+
+    section Testing
+    Unit Testing : 2023-03-19, 14d
+    Integration Testing : 2023-04-02, 14d
+
+    section Deployment
+    Deploy : 2023-04-16, 7d
+    User Training : 2023-04-23, 14d
+
+    section Maintenance
+    Ongoing Support : 2023-05-07, 30d
+
 ```
