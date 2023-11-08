@@ -2,6 +2,7 @@
 
 - [Mermaid: Generate diagrams from markdown-like text.](https://github.com/mermaid-js/mermaid/blob/develop/README.md)
 - [Mermaidv10.5.0 Live Editor](https://mermaid.live/)
+- [A Mermaid User-Guide for Beginners](https://mermaid.js.org/intro/getting-started.html)
 
 ```mermaid
 graph LR
