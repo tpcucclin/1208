@@ -38,6 +38,19 @@ D ----> E[Enjoy your weekend!];
 ```
 
 ```mermaid
+gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+```
+
+```mermaid
 graph TD
 A[1*1=1] -->|" "| B[1*2=2]
 A -->|" "| C[1*3=3]
@@ -106,4 +119,13 @@ gantt
     section Maintenance
     Ongoing Support : 2023-05-07, 30d
 
+```
+
+```mermaid
+xychart
+    title "Sales Revenue"
+    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+    y-axis "Revenue (in $)" 4000 --> 11000
+    bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+    line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
 ```
