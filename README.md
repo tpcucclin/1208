@@ -1,6 +1,6 @@
 ## 教師角色與生成式AI的互動運用
 
-課程名稱： 教學與生成式AI：運用GitHub的創新教學方法
+學習目標： 結合生成式AI，運用GitHub的創新教學方法
 
 課程簡介： 本課程旨在教導教師如何運用GitHub和生成式人工智慧技術來提高教學效果和學生參與度。學員將學習如何使用GitHub進行教學資源的管理和共享，並探索生成式AI在教學中的應用，從而創造更具創意和個性化的學習體驗。
 
@@ -18,6 +18,7 @@
 - 表格和程式碼塊
 - [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+- [歡迎使用 Markdown線上編輯器 MdEditor](https://www.mdeditor.tw/)
 - 實際操作：編寫一份技術文檔或學術報告，包括標題、段落、列表、引用、鏈接和圖片等元素。
   
 單元三：生成式AI概述與應用
