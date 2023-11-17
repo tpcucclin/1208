@@ -121,11 +121,16 @@ gantt
 
 ```
 
+
 ```mermaid
-xychart
-    title "Sales Revenue"
-    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
-    y-axis "Revenue (in $)" 4000 --> 11000
-    bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
-    line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+flowchart TD;
+ A[開始] -->B[/讀入 硬幣數量, 期望金額 /]
+ B --> C[/讀入 硬幣種類/]
+ C --> D[/"建立 dp list 大小為期望金額+1,<br> dp[i] 代表達成金額的方法數, 且dp[0]=1"/]
+ D --> E("for 針對每種硬幣面額 <br> for 金額 0 to 期望金額")
+ E --> 結束
+ F --> |條件為真| H("dp[金額] +=  dp[金額 - coin]")
+ E --> F{金額 - count >=0}
+ F -->  |條件為否| E
+ H --> E
 ```
