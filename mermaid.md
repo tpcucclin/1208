@@ -1,9 +1,36 @@
-#### Mermain
+## Mermain
 
 - [Mermaid: Generate diagrams from markdown-like text.](https://github.com/mermaid-js/mermaid/blob/develop/README.md)
 - [Mermaidv10.5.0 Live Editor](https://mermaid.live/)
 - [A Mermaid User-Guide for Beginners](https://mermaid.js.org/intro/getting-started.html)
 - [How to Create Diagrams as Code with Mermaid, GitHub, and Visual Studio Code (SEPTEMBER 6, 2023)](https://www.freecodecamp.org/news/diagrams-as-code-with-mermaid-github-and-vs-code/)
+
+#### [Flowcharts - Basic Syntax](https://mermaid.js.org/syntax/flowchart.html)
+```mermaid
+---
+title: Node
+---
+flowchart LR
+    id
+```
+
+#### [A node with text](https://mermaid.js.org/syntax/flowchart.html)
+```mermaid
+flowchart LR
+    id["This ❤ Unicode"]
+```
+
+#### [Markdown formatting](https://mermaid.js.org/syntax/flowchart.html)
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+    markdown["`This **is** _Markdown_`"]
+    newLines["`Line1
+    Line 2
+    Line 3`"]
+    markdown --> newLines
+```
+
 
 ```mermaid
 graph LR
@@ -21,7 +48,7 @@ graph LR;
     E--> B & C & D;
 ```
 
-## [State diagrams](https://mermaid.js.org/syntax/stateDiagram.html)
+#### [State diagrams](https://mermaid.js.org/syntax/stateDiagram.html)
 ```mermaid
 stateDiagram-v2
     [*] --> Still
@@ -33,7 +60,7 @@ stateDiagram-v2
     Crash --> [*]
 ```
 
-## Apply classDef styles to states
+#### [Apply classDef styles to states](https://mermaid.js.org/syntax/stateDiagram.html#apply-classdef-styles-to-states)
 ```mermaid
    stateDiagram
    direction TB
