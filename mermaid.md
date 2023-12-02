@@ -21,6 +21,7 @@ graph LR;
     E--> B & C & D;
 ```
 
+## [State diagrams](https://mermaid.js.org/syntax/stateDiagram.html)
 ```mermaid
 stateDiagram-v2
     [*] --> Still
@@ -32,6 +33,7 @@ stateDiagram-v2
     Crash --> [*]
 ```
 
+## Apply classDef styles to states
 ```mermaid
    stateDiagram
    direction TB
