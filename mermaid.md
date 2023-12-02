@@ -22,6 +22,41 @@ graph LR;
 ```
 
 ```mermaid
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+%% this is a comment
+    Still --> Moving
+    Moving --> Still %% another comment
+    Moving --> Crash
+    Crash --> [*]
+```
+
+```mermaid
+   stateDiagram
+   direction TB
+
+   accTitle: This is the accessible title
+   accDescr: This is an accessible description
+
+   classDef notMoving fill:white
+   classDef movement font-style:italic
+   classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+
+   [*]--> Still
+   Still --> [*]
+   Still --> Moving
+   Moving --> Still
+   Moving --> Crash
+   Crash --> [*]
+
+   class Still notMoving
+   class Moving, Crash movement
+   class Crash badBadEvent
+   class end badBadEvent
+```
+
+```mermaid
 flowchart TD
   A[Christmas] -->|Get money| B(Go shopping)
   B --> C{Let me think}
