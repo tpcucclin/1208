@@ -30,6 +30,32 @@ flowchart LR
     markdown --> newLines
 ```
 
+### [An invisible link](https://mermaid.js.org/syntax/flowchart.html#an-invisible-link)
+
+LR vs. TD 隱藏的鏈結線 
+
+```mermaid
+flowchart LR
+    A ~~~ B ~~~ C
+    D ~~~ E ~~~ F
+```
+
+```mermaid
+flowchart TD
+    A ~~~ B ~~~ C
+    D ~~~ E ~~~ F
+```
+
+### [Chaining of links](https://mermaid.js.org/syntax/flowchart.html#chaining-of-links)
+###
+```mermaid
+flowchart LR
+   A -- text --> B -- text2 --> C
+```
+```mermaid
+flowchart LR
+   a --> b & c--> d
+```
 
 ```mermaid
 graph LR
@@ -45,6 +71,12 @@ graph LR;
     C--> A & E;
     D--> A & E;
     E--> B & C & D;
+```
+
+```mermaid
+flowchart LR
+    A --o B
+    B --x C
 ```
 
 #### [State diagrams](https://mermaid.js.org/syntax/stateDiagram.html)
