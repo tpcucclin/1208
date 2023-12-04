@@ -256,6 +256,17 @@ flowchart TD;
  id12[/梯形1\] -->
  id13[\梯形2/]
 ```
+```mermaid
+journey
+    title 學習成績評量
+    section 評量指標
+    出勤情形: 6
+    學習態度: 5 
+    言行表現: 4 
+    學習成效:3
+    section 合計
+    總分:4
+```
 
 ```mermaid
 flowchart TD
