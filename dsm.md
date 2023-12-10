@@ -75,3 +75,57 @@ $$
 $$
 r^{2}=\frac{-12.4}{5.6}*\frac{-12.4}{38.7}=0.7094868955334073
 $$
+
+##  判定係數(coefficient of determination)與校正的判定係數（adjusted coefficient of determination)
+判定係數(coefficient of determination)、校正的判定係數（adjusted coefficient of determination) 與總平方和（Total Sum of Squares，SST）、回歸平方和（Regression Sum of Squares，SSR）、殘差平方和（Residual Sum of Squares，SSE）之間的關係可以通過以下公式表示：
+
+### 總平方和（SST）：
+$$
+SST=\sum_{i=1}^{n}(y_{i}-\bar{y})^2 
+$$
+
+>其中  $\bar{y}$ 是因變數 y 的平均值。
+
+### 回歸平方和（SSR）：
+$$
+SSR=\sum_{i=1}^{n}(\widehat{y_{i}}-\bar{y})^2 
+$$
+
+>其中 $\widehat{y_{i}}$ 是根據回歸模型預測的因變數值
+
+### 殘差平方和（SSE）：
+$$
+SSE=\sum_{i=1}^{n}(y_{i}-\widehat{y_{i}})^2 
+$$
+
+>其中 $y_{i}$ 是實際的因變數值
+
+### 判定係數 $R^{2}$
+$$
+R^{2} = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}
+$$
+
+### 校正的判定係數 $R^{2}_{adj}$
+$$
+R^{2}_{adj} = 1 - \frac{(1-R^{2})*(n-1)}{n-k-1}
+$$
+
+>其中 n 是樣本大小，k 是模型中的自變數數量。
+
+總平方和（SST）反映了因變數的總變異，回歸平方和（SSR）反映了模型能夠解釋的變異，而殘差平方和（SSE）則反映了模型無法解釋的殘差變異。判定係數 $R^{2}$ 表示模型解釋的變異在總變異中的比例，而校正的判定係數 $R^{2}_{adj}$進一步考慮了模型中自變數的數量，以避免過度擬合。
+
+###  3-23 簡單回歸計算題型
+
+依據研究價格($x_{1}$), 廣告費用($x_{2}$), 銷售量($y$) 三個變數之間的關係,搜集了 10 組數據,獲得下列統計值:SSR =18.95、SSE =5.05,試算此迴歸模型調整過的判定係數(adjusted coefficient of determination),
+下列哪一項正確?
+
+```
+(A)0.71
+(B)0.72
+(C)0.73
+(D)0.74
+```
+
+### 解:
+依據簡單回歸公式： $y=b_0+b_1x_{1}+b_2x_{2}$
+
