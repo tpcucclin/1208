@@ -282,3 +282,24 @@ flowchart TD
      報告時間: 12分鐘
      委員提問: 3分鐘"]
 ```
+
+```mermaid
+flowchart TB
+  node_1("成績評分標準")
+  node_2("出勤情形
+  (20%)")
+  node_3("學習態度
+  (25%)")
+  node_4("言行表現
+  (25%)")
+  node_5("學習成效
+  (30%)")
+  node_6("合計")
+  node_7("總分")
+  node_1 ==> node_2 & node_3 & node_4 & node_5
+  node_2 ==> node_6
+  node_3 ==> node_6
+  node_4 ==> node_6
+  node_5 ==> node_6
+  node_6 ==> node_7
+```
